@@ -1,0 +1,68 @@
+USE DB
+GO
+
+
+ALTER TABLE TCXP_DETALLES
+ADD Cuenta_Contable Varchar(60)
+GO
+
+ALTER TABLE TCXP_DETALLES
+ADD Descripcion_Cuenta Varchar(1500)
+GO
+
+
+ALTER TABLE TCXP_DETALLES
+ADD Codigo_Auxiliar bigInt
+go
+
+
+ALTER TABLE TCXP
+ADD MontoNCF Numeric(18, 2)
+go
+
+
+
+ALTER TABLE TTEMPORAL_CXP_DETALLES
+ADD Cuenta_Contable Varchar(60)
+GO
+
+ALTER TABLE TTEMPORAL_CXP_DETALLES
+ADD Descripcion_Cuenta Varchar(1500)
+GO
+
+
+ALTER TABLE TTEMPORAL_CXP_DETALLES
+ADD Codigo_Auxiliar bigInt
+go
+
+
+ALTER TABLE TTEMPORAL_CXP
+ADD MontoNCF Numeric(18, 2)
+go
+
+
+ALTER TABLE TTEMPORAL_CXP
+ADD Telefono1 Varchar(20)
+go
+
+ALTER TABLE TTEMPORAL_CXP
+ADD Telefono2 Varchar(20)
+go
+
+
+ALTER TABLE TCXP
+ADD Telefono1 Varchar(20)
+go
+
+ALTER TABLE TCXP
+ADD Telefono2 Varchar(20)
+go
+
+
+ALTER TABLE TCXP
+ALTER COLUMN Telefono Varchar(100)
+go
+
+ALTER TABLE TTEMPORAL_CXP
+ALTER COLUMN Telefono Varchar(100)
+go

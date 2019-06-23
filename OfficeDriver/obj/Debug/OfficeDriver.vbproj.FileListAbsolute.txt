@@ -1,0 +1,19 @@
+C:\DATOS LANDETA\OfficeDriver\OfficeDriver\OfficeDriver\bin\Debug\OfficeDriver.dll
+C:\DATOS LANDETA\OfficeDriver\OfficeDriver\OfficeDriver\bin\Debug\OfficeDriver.pdb
+C:\DATOS LANDETA\OfficeDriver\OfficeDriver\OfficeDriver\bin\Debug\OfficeDriver.xml
+C:\DATOS LANDETA\OfficeDriver\OfficeDriver\OfficeDriver\obj\Debug\OfficeDriver.Resources.resources
+C:\DATOS LANDETA\OfficeDriver\OfficeDriver\OfficeDriver\obj\Debug\OfficeDriver.vbproj.GenerateResource.Cache
+C:\DATOS LANDETA\OfficeDriver\OfficeDriver\OfficeDriver\obj\Debug\OfficeDriver.dll
+C:\DATOS LANDETA\OfficeDriver\OfficeDriver\OfficeDriver\obj\Debug\OfficeDriver.xml
+C:\DATOS LANDETA\OfficeDriver\OfficeDriver\OfficeDriver\obj\Debug\OfficeDriver.pdb
+C:\DATOS LANDETA\OfficeDriver\OfficeDriver\OfficeDriver\obj\Debug\OfficeDriver.vbprojResolveAssemblyReference.cache
+C:\Proyectos\SYSTEM_ERP_NET\OfficeDriver\bin\Debug\OfficeDriver.dll
+C:\Proyectos\SYSTEM_ERP_NET\OfficeDriver\bin\Debug\OfficeDriver.pdb
+C:\Proyectos\SYSTEM_ERP_NET\OfficeDriver\bin\Debug\OfficeDriver.xml
+C:\Proyectos\SYSTEM_ERP_NET\OfficeDriver\obj\Debug\OfficeDriver.Resources.resources
+C:\Proyectos\SYSTEM_ERP_NET\OfficeDriver\obj\Debug\OfficeDriver.vbproj.GenerateResource.Cache
+C:\Proyectos\SYSTEM_ERP_NET\OfficeDriver\obj\Debug\OfficeDriver.dll
+C:\Proyectos\SYSTEM_ERP_NET\OfficeDriver\obj\Debug\OfficeDriver.xml
+C:\Proyectos\SYSTEM_ERP_NET\OfficeDriver\obj\Debug\OfficeDriver.pdb
+C:\Proyectos\SYSTEM_ERP_NET\OfficeDriver\obj\Debug\OfficeDriver.vbproj.CoreCompileInputs.cache
+C:\Proyectos\SYSTEM_ERP_NET\OfficeDriver\obj\Debug\OfficeDriver.vbprojAssemblyReference.cache

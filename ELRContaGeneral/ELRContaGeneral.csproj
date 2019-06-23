@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{07949FC8-B7A5-47DB-8950-D719CD166410}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ELRContaGeneral</RootNamespace>
+    <AssemblyName>ELRContaGeneral</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.Runtime.12.0.2.2402\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.Runtime.12.0.2.2402\lib\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.Runtime.12.0.2.2402\lib\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormCargarCatalogoDesdeExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCargarCatalogoDesdeExcel.Designer.cs">
+      <DependentUpon>FormCargarCatalogoDesdeExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaAsientoPredefinidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaAsientoPredefinidos.Designer.cs">
+      <DependentUpon>FormContaAsientoPredefinidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaAsientoPredefinidosGenerar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaAsientoPredefinidosGenerar.Designer.cs">
+      <DependentUpon>FormContaAsientoPredefinidosGenerar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaAsientoPredefinidosR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaAsientoPredefinidosR.Designer.cs">
+      <DependentUpon>FormContaAsientoPredefinidosR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaCatalogoACierre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaCatalogoACierre.Designer.cs">
+      <DependentUpon>FormContaCatalogoACierre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaConfigurarCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaConfigurarCuentas.Designer.cs">
+      <DependentUpon>FormContaConfigurarCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaConsultaCierre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaConsultaCierre.Designer.cs">
+      <DependentUpon>FormContaConsultaCierre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaContrapartidasR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaContrapartidasR.Designer.cs">
+      <DependentUpon>FormContaContrapartidasR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaEnlaceCuentaR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaEnlaceCuentaR.Designer.cs">
+      <DependentUpon>FormContaEnlaceCuentaR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaEstados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaEstados.Designer.cs">
+      <DependentUpon>FormContaEstados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaEstadosAGenerar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaEstadosAGenerar.Designer.cs">
+      <DependentUpon>FormContaEstadosAGenerar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaEstadosFormatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaEstadosFormatos.Designer.cs">
+      <DependentUpon>FormContaEstadosFormatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaEstadosFormatosCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaEstadosFormatosCuentas.Designer.cs">
+      <DependentUpon>FormContaEstadosFormatosCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaEstadosFormatosCuentasR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaEstadosFormatosCuentasR.Designer.cs">
+      <DependentUpon>FormContaEstadosFormatosCuentasR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaEstadosFormatosR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaEstadosFormatosR.Designer.cs">
+      <DependentUpon>FormContaEstadosFormatosR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaEstadosGenerados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaEstadosGenerados.Designer.cs">
+      <DependentUpon>FormContaEstadosGenerados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaEstadosR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaEstadosR.Designer.cs">
+      <DependentUpon>FormContaEstadosR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaGenerarAsientosModulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaGenerarAsientosModulos.Designer.cs">
+      <DependentUpon>FormContaGenerarAsientosModulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaGenerarContabilidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaGenerarContabilidad.Designer.cs">
+      <DependentUpon>FormContaGenerarContabilidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaGenerarG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaGenerarG.Designer.cs">
+      <DependentUpon>FormContaGenerarG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaMovimientosAnularR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaMovimientosAnularR.Designer.cs">
+      <DependentUpon>FormContaMovimientosAnularR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaCatalogoBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaCatalogoBalance.Designer.cs">
+      <DependentUpon>FormContaCatalogoBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaCatalogoEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaCatalogoEdit.Designer.cs">
+      <DependentUpon>FormContaCatalogoEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaCentroCostos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaCentroCostos.Designer.cs">
+      <DependentUpon>FormContaCentroCostos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaCentroCostosR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaCentroCostosR.Designer.cs">
+      <DependentUpon>FormContaCentroCostosR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaCierreDiario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaCierreDiario.Designer.cs">
+      <DependentUpon>FormContaCierreDiario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaCierreMensual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaCierreMensual.Designer.cs">
+      <DependentUpon>FormContaCierreMensual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaCierrePeriodo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaCierrePeriodo.Designer.cs">
+      <DependentUpon>FormContaCierrePeriodo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaCuentasR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaCuentasR.Designer.cs">
+      <DependentUpon>FormContaCuentasR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaPaseRevertir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaPaseRevertir.Designer.cs">
+      <DependentUpon>FormContaPaseRevertir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaMovimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaMovimientos.Designer.cs">
+      <DependentUpon>FormContaMovimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaMovimientosPorCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaMovimientosPorCuenta.Designer.cs">
+      <DependentUpon>FormContaMovimientosPorCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaMovimientosR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaMovimientosR.Designer.cs">
+      <DependentUpon>FormContaMovimientosR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaPaseAlMayor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaPaseAlMayor.Designer.cs">
+      <DependentUpon>FormContaPaseAlMayor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaSaldoCuentaPorSucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaSaldoCuentaPorSucursal.Designer.cs">
+      <DependentUpon>FormContaSaldoCuentaPorSucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaSaldoPorCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaSaldoPorCuenta.Designer.cs">
+      <DependentUpon>FormContaSaldoPorCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaMovimientosAnular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaMovimientosAnular.Designer.cs">
+      <DependentUpon>FormContaMovimientosAnular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContaMovimientosContrapartidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContaMovimientosContrapartidas.Designer.cs">
+      <DependentUpon>FormContaMovimientosContrapartidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDiarioCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDiarioCuenta.Designer.cs">
+      <DependentUpon>FormDiarioCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataDB_ELR_NET\DataDB_ELR_NET.csproj">
+      <Project>{500b429c-3ac5-4fac-ab2a-4a3f5d9b85dc}</Project>
+      <Name>DataDB_ELR_NET</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OfficeDriver\OfficeDriver.vbproj">
+      <Project>{56751cd0-37c7-45d0-88b7-b606abb3f7ba}</Project>
+      <Name>OfficeDriver</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WinControl_ELR_NET\WinControl_ELR_NET.csproj">
+      <Project>{bd4c4f54-a39b-4538-8eae-1279c3db8147}</Project>
+      <Name>WinControl_ELR_NET</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormCargarCatalogoDesdeExcel.resx">
+      <DependentUpon>FormCargarCatalogoDesdeExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaAsientoPredefinidos.resx">
+      <DependentUpon>FormContaAsientoPredefinidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaAsientoPredefinidosGenerar.resx">
+      <DependentUpon>FormContaAsientoPredefinidosGenerar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaAsientoPredefinidosR.resx">
+      <DependentUpon>FormContaAsientoPredefinidosR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaCatalogoACierre.resx">
+      <DependentUpon>FormContaCatalogoACierre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaCatalogoBalance.resx">
+      <DependentUpon>FormContaCatalogoBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaCatalogoEdit.resx">
+      <DependentUpon>FormContaCatalogoEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaCentroCostos.resx">
+      <DependentUpon>FormContaCentroCostos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaCentroCostosR.resx">
+      <DependentUpon>FormContaCentroCostosR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaCierreDiario.resx">
+      <DependentUpon>FormContaCierreDiario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaCierreMensual.resx">
+      <DependentUpon>FormContaCierreMensual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaCierrePeriodo.resx">
+      <DependentUpon>FormContaCierrePeriodo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaConfigurarCuentas.resx">
+      <DependentUpon>FormContaConfigurarCuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaConsultaCierre.resx">
+      <DependentUpon>FormContaConsultaCierre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaContrapartidasR.resx">
+      <DependentUpon>FormContaContrapartidasR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaCuentasR.resx">
+      <DependentUpon>FormContaCuentasR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaEnlaceCuentaR.resx">
+      <DependentUpon>FormContaEnlaceCuentaR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaEstados.resx">
+      <DependentUpon>FormContaEstados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaEstadosAGenerar.resx">
+      <DependentUpon>FormContaEstadosAGenerar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaEstadosFormatos.resx">
+      <DependentUpon>FormContaEstadosFormatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaEstadosFormatosCuentas.resx">
+      <DependentUpon>FormContaEstadosFormatosCuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaEstadosFormatosCuentasR.resx">
+      <DependentUpon>FormContaEstadosFormatosCuentasR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaEstadosFormatosR.resx">
+      <DependentUpon>FormContaEstadosFormatosR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaEstadosGenerados.resx">
+      <DependentUpon>FormContaEstadosGenerados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaEstadosR.resx">
+      <DependentUpon>FormContaEstadosR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaGenerarAsientosModulos.resx">
+      <DependentUpon>FormContaGenerarAsientosModulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaGenerarContabilidad.resx">
+      <DependentUpon>FormContaGenerarContabilidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaGenerarG.resx">
+      <DependentUpon>FormContaGenerarG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaMovimientosAnularR.resx">
+      <DependentUpon>FormContaMovimientosAnularR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaPaseRevertir.resx">
+      <DependentUpon>FormContaPaseRevertir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaMovimientos.resx">
+      <DependentUpon>FormContaMovimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaMovimientosPorCuenta.resx">
+      <DependentUpon>FormContaMovimientosPorCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaMovimientosR.resx">
+      <DependentUpon>FormContaMovimientosR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaPaseAlMayor.resx">
+      <DependentUpon>FormContaPaseAlMayor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaSaldoCuentaPorSucursal.resx">
+      <DependentUpon>FormContaSaldoCuentaPorSucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaSaldoPorCuenta.resx">
+      <DependentUpon>FormContaSaldoPorCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaMovimientosAnular.resx">
+      <DependentUpon>FormContaMovimientosAnular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContaMovimientosContrapartidas.resx">
+      <DependentUpon>FormContaMovimientosContrapartidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Resources\1378160672_search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrowDownCircle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrowUpCircle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CancelCircle.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

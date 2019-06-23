@@ -1,0 +1,8 @@
+D:\PROYECTO\ConfigConexion\ConfigConexion\obj\Release\ResolveAssemblyReference.cache
+D:\PROYECTO\ConfigConexion\ConfigConexion\obj\Release\ConfigConexion.frmConfiConexion.resources
+D:\PROYECTO\ConfigConexion\ConfigConexion\obj\Release\ConfigConexion.Properties.Resources.resources
+D:\PROYECTO\ConfigConexion\ConfigConexion\obj\Release\ConfigConexion.csproj.GenerateResource.Cache
+D:\PROYECTO\ConfigConexion\ConfigConexion\bin\Release\ConfigConexion.exe
+D:\PROYECTO\ConfigConexion\ConfigConexion\bin\Release\ConfigConexion.pdb
+D:\PROYECTO\ConfigConexion\ConfigConexion\obj\Release\ConfigConexion.exe
+D:\PROYECTO\ConfigConexion\ConfigConexion\obj\Release\ConfigConexion.pdb

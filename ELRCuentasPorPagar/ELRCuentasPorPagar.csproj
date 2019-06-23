@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0E3810DF-3284-47C1-940E-6BE1E2296CB7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ELRCuentasPorPagar</RootNamespace>
+    <AssemblyName>ELRCuentasPorPagar</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FastReport.Bars">
+      <HintPath>..\..\..\inst\FastReport.NET for NetFx4 2015.2.16\FastReport.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAnularFacturaCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAnularFacturaCompra.Designer.cs">
+      <DependentUpon>FormAnularFacturaCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAnularFacturaCompraR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAnularFacturaCompraR.Designer.cs">
+      <DependentUpon>FormAnularFacturaCompraR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAprobarAnularOrdenCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAprobarAnularOrdenCompra.Designer.cs">
+      <DependentUpon>FormAprobarAnularOrdenCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBuscarCXP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBuscarCXP.Designer.cs">
+      <DependentUpon>FormBuscarCXP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormComprasAprobarAnularR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormComprasAprobarAnularR.Designer.cs">
+      <DependentUpon>FormComprasAprobarAnularR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultaMovimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultaMovimientos.Designer.cs">
+      <DependentUpon>FormConsultaMovimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCXP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCXP.Designer.cs">
+      <DependentUpon>FormCXP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCXPPagoR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCXPPagoR.Designer.cs">
+      <DependentUpon>FormCXPPagoR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCXPPagosRealizados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCXPPagosRealizados.Designer.cs">
+      <DependentUpon>FormCXPPagosRealizados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFacturaCompraOtrosCampos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFacturaCompraOtrosCampos.Designer.cs">
+      <DependentUpon>FormFacturaCompraOtrosCampos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFacturaCompraR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFacturaCompraR.Designer.cs">
+      <DependentUpon>FormFacturaCompraR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFacturasCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFacturasCompras.Designer.cs">
+      <DependentUpon>FormFacturasCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGastosFijos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGastosFijos.Designer.cs">
+      <DependentUpon>FormGastosFijos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGastosFijosGenerar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGastosFijosGenerar.Designer.cs">
+      <DependentUpon>FormGastosFijosGenerar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGastosFijosR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGastosFijosR.Designer.cs">
+      <DependentUpon>FormGastosFijosR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGastosMenores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGastosMenores.Designer.cs">
+      <DependentUpon>FormGastosMenores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGastosMenoresR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGastosMenoresR.Designer.cs">
+      <DependentUpon>FormGastosMenoresR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInventarioAjuste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInventarioAjuste.Designer.cs">
+      <DependentUpon>FormInventarioAjuste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInventarioDesdeExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInventarioDesdeExcel.Designer.cs">
+      <DependentUpon>FormInventarioDesdeExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNotaCreditoACompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNotaCreditoACompra.Designer.cs">
+      <DependentUpon>FormNotaCreditoACompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNotaCreditoACompraR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNotaCreditoACompraR.Designer.cs">
+      <DependentUpon>FormNotaCreditoACompraR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNotaDebitoCreditoACXP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNotaDebitoCreditoACXP.Designer.cs">
+      <DependentUpon>FormNotaDebitoCreditoACXP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNotaDebitoCreditoACXPR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNotaDebitoCreditoACXPR.Designer.cs">
+      <DependentUpon>FormNotaDebitoCreditoACXPR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOpeCXP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOpeCXP.Designer.cs">
+      <DependentUpon>FormOpeCXP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOrdComprasR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrdComprasR.Designer.cs">
+      <DependentUpon>FormOrdComprasR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOrdCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrdCompras.Designer.cs">
+      <DependentUpon>FormOrdCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOtrosGastos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOtrosGastos.Designer.cs">
+      <DependentUpon>FormOtrosGastos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOtrosGastosR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOtrosGastosR.Designer.cs">
+      <DependentUpon>FormOtrosGastosR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRequisiciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRequisiciones.Designer.cs">
+      <DependentUpon>FormRequisiciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRequisicionesR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRequisicionesR.Designer.cs">
+      <DependentUpon>FormRequisicionesR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_CXP_Antiguedad_Saldo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_CXP_Antiguedad_Saldo.Designer.cs">
+      <DependentUpon>Form_CXP_Antiguedad_Saldo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataDB_ELR_NET\DataDB_ELR_NET.csproj">
+      <Project>{500b429c-3ac5-4fac-ab2a-4a3f5d9b85dc}</Project>
+      <Name>DataDB_ELR_NET</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ELRMaestros\ELRMaestros.csproj">
+      <Project>{718001e5-63ae-4f4a-b16b-861036c65ca6}</Project>
+      <Name>ELRMaestros</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OfficeDriver\OfficeDriver.vbproj">
+      <Project>{56751cd0-37c7-45d0-88b7-b606abb3f7ba}</Project>
+      <Name>OfficeDriver</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WinControl_ELR_NET\WinControl_ELR_NET.csproj">
+      <Project>{bd4c4f54-a39b-4538-8eae-1279c3db8147}</Project>
+      <Name>WinControl_ELR_NET</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAnularFacturaCompra.resx">
+      <DependentUpon>FormAnularFacturaCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAnularFacturaCompraR.resx">
+      <DependentUpon>FormAnularFacturaCompraR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAprobarAnularOrdenCompra.resx">
+      <DependentUpon>FormAprobarAnularOrdenCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBuscarCXP.resx">
+      <DependentUpon>FormBuscarCXP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormComprasAprobarAnularR.resx">
+      <DependentUpon>FormComprasAprobarAnularR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultaMovimientos.resx">
+      <DependentUpon>FormConsultaMovimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCXP.resx">
+      <DependentUpon>FormCXP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCXPPagoR.resx">
+      <DependentUpon>FormCXPPagoR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCXPPagosRealizados.resx">
+      <DependentUpon>FormCXPPagosRealizados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFacturaCompraOtrosCampos.resx">
+      <DependentUpon>FormFacturaCompraOtrosCampos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFacturaCompraR.resx">
+      <DependentUpon>FormFacturaCompraR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFacturasCompras.resx">
+      <DependentUpon>FormFacturasCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGastosFijos.resx">
+      <DependentUpon>FormGastosFijos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGastosFijosGenerar.resx">
+      <DependentUpon>FormGastosFijosGenerar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGastosFijosR.resx">
+      <DependentUpon>FormGastosFijosR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGastosMenores.resx">
+      <DependentUpon>FormGastosMenores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGastosMenoresR.resx">
+      <DependentUpon>FormGastosMenoresR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInventarioAjuste.resx">
+      <DependentUpon>FormInventarioAjuste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInventarioDesdeExcel.resx">
+      <DependentUpon>FormInventarioDesdeExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNotaCreditoACompra.resx">
+      <DependentUpon>FormNotaCreditoACompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNotaCreditoACompraR.resx">
+      <DependentUpon>FormNotaCreditoACompraR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNotaDebitoCreditoACXP.resx">
+      <DependentUpon>FormNotaDebitoCreditoACXP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNotaDebitoCreditoACXPR.resx">
+      <DependentUpon>FormNotaDebitoCreditoACXPR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOpeCXP.resx">
+      <DependentUpon>FormOpeCXP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrdCompras.resx">
+      <DependentUpon>FormOrdCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrdComprasR.resx">
+      <DependentUpon>FormOrdComprasR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOtrosGastos.resx">
+      <DependentUpon>FormOtrosGastos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOtrosGastosR.resx">
+      <DependentUpon>FormOtrosGastosR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRequisiciones.resx">
+      <DependentUpon>FormRequisiciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRequisicionesR.resx">
+      <DependentUpon>FormRequisicionesR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_CXP_Antiguedad_Saldo.resx">
+      <DependentUpon>Form_CXP_Antiguedad_Saldo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Resources\1378160672_search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_property-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add 16.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

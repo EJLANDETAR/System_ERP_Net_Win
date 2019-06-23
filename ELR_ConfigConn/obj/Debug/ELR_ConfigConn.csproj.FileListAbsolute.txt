@@ -1,0 +1,46 @@
+C:\Proyectos\PROYECTO VS\PROYECTO VS\ProyectoGPV\ELR_ConfigConn\bin\Debug\ELR_ConfigConn.dll
+C:\Proyectos\PROYECTO VS\PROYECTO VS\ProyectoGPV\ELR_ConfigConn\bin\Debug\ELR_ConfigConn.pdb
+C:\Proyectos\PROYECTO VS\PROYECTO VS\ProyectoGPV\ELR_ConfigConn\obj\Debug\ELR_ConfigConn.dll
+C:\Proyectos\PROYECTO VS\PROYECTO VS\ProyectoGPV\ELR_ConfigConn\obj\Debug\ELR_ConfigConn.pdb
+C:\MyProject\SYSTEM_ERP_NET\SYSTEM_ERP_NET\ELR_ConfigConn\bin\Debug\ELR_ConfigConn.dll
+C:\MyProject\SYSTEM_ERP_NET\SYSTEM_ERP_NET\ELR_ConfigConn\bin\Debug\ELR_ConfigConn.pdb
+C:\MyProject\SYSTEM_ERP_NET\SYSTEM_ERP_NET\ELR_ConfigConn\obj\Debug\ELR_ConfigConn.csprojResolveAssemblyReference.cache
+C:\MyProject\SYSTEM_ERP_NET\SYSTEM_ERP_NET\ELR_ConfigConn\obj\Debug\ELR_ConfigConn.dll
+C:\MyProject\SYSTEM_ERP_NET\SYSTEM_ERP_NET\ELR_ConfigConn\obj\Debug\ELR_ConfigConn.pdb
+C:\system_erp_net\SYSTEM_ERP_NET\ELR_ConfigConn\bin\Debug\ELR_ConfigConn.dll
+C:\system_erp_net\SYSTEM_ERP_NET\ELR_ConfigConn\bin\Debug\ELR_ConfigConn.pdb
+C:\system_erp_net\SYSTEM_ERP_NET\ELR_ConfigConn\obj\Debug\ELR_ConfigConn.csprojResolveAssemblyReference.cache
+C:\system_erp_net\SYSTEM_ERP_NET\ELR_ConfigConn\obj\Debug\ELR_ConfigConn.dll
+C:\system_erp_net\SYSTEM_ERP_NET\ELR_ConfigConn\obj\Debug\ELR_ConfigConn.pdb
+C:\MyProject\SYSTEM_ERP_NET\ELR_ConfigConn\bin\Debug\ELR_ConfigConn.dll
+C:\MyProject\SYSTEM_ERP_NET\ELR_ConfigConn\bin\Debug\ELR_ConfigConn.pdb
+C:\MyProject\SYSTEM_ERP_NET\ELR_ConfigConn\obj\Debug\ELR_ConfigConn.dll
+C:\MyProject\SYSTEM_ERP_NET\ELR_ConfigConn\obj\Debug\ELR_ConfigConn.pdb
+C:\MyProject\SYSTEM_ERP_NET\ELR_ConfigConn\obj\Debug\ELR_ConfigConn.csprojResolveAssemblyReference.cache
+C:\MyProjects\SYSTEM_ERP_NET\ELR_ConfigConn\bin\Debug\ELR_ConfigConn.dll
+C:\MyProjects\SYSTEM_ERP_NET\ELR_ConfigConn\bin\Debug\ELR_ConfigConn.pdb
+C:\MyProjects\SYSTEM_ERP_NET\ELR_ConfigConn\obj\Debug\ELR_ConfigConn.dll
+C:\MyProjects\SYSTEM_ERP_NET\ELR_ConfigConn\obj\Debug\ELR_ConfigConn.pdb
+C:\MyProjects\SYSTEM_ERP_NET\ELR_ConfigConn\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\MyProjects\SYSTEM_ERP_NET\ELR_ConfigConn\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\MyProjects\SYSTEM_ERP_NET\ELR_ConfigConn\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+C:\MyProjects\SYSTEM_ERP_NET\ELR_ConfigConn\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\MyProjects\SYSTEM_ERP_NET\ELR_ConfigConn\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+C:\MyProjects\SYSTEM_ERP_NET\ELR_ConfigConn\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+C:\MyProjects\SYSTEM_ERP_NET\ELR_ConfigConn\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+C:\MyProjects\SYSTEM_ERP_NET\ELR_ConfigConn\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+C:\MyProjects\SYSTEM_ERP_NET\ELR_ConfigConn\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+C:\MyProjects\SYSTEM_ERP_NET\ELR_ConfigConn\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+C:\MyProjects\SYSTEM_ERP_NET\ELR_ConfigConn\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+C:\MyProjects\SYSTEM_ERP_NET\ELR_ConfigConn\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+C:\MyProjects\SYSTEM_ERP_NET\ELR_ConfigConn\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\MyProjects\SYSTEM_ERP_NET\ELR_ConfigConn\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Proyectos\SYSTEM_ERP_NET\ELR_ConfigConn\bin\Debug\ELR_ConfigConn.dll
+C:\Proyectos\SYSTEM_ERP_NET\ELR_ConfigConn\bin\Debug\ELR_ConfigConn.pdb
+C:\Proyectos\SYSTEM_ERP_NET\ELR_ConfigConn\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Proyectos\SYSTEM_ERP_NET\ELR_ConfigConn\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Proyectos\SYSTEM_ERP_NET\ELR_ConfigConn\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+C:\Proyectos\SYSTEM_ERP_NET\ELR_ConfigConn\obj\Debug\ELR_ConfigConn.dll
+C:\Proyectos\SYSTEM_ERP_NET\ELR_ConfigConn\obj\Debug\ELR_ConfigConn.pdb
+C:\Proyectos\SYSTEM_ERP_NET\ELR_ConfigConn\obj\Debug\ELR_ConfigConn.csproj.CoreCompileInputs.cache
+C:\Proyectos\SYSTEM_ERP_NET\ELR_ConfigConn\obj\Debug\ELR_ConfigConn.csproj.CopyComplete

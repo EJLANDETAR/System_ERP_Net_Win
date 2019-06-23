@@ -1,0 +1,492 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{718001E5-63AE-4F4A-B16B-861036C65CA6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ELRMaestros</RootNamespace>
+    <AssemblyName>ELRMaestros</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.Runtime.12.0.2.2402\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.Runtime.12.0.2.2402\lib\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.Runtime.12.0.2.2402\lib\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormCajas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCajas.Designer.cs">
+      <DependentUpon>FormCajas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCajasR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCajasR.Designer.cs">
+      <DependentUpon>FormCajasR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCategoriaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCategoriaProducto.Designer.cs">
+      <DependentUpon>FormCategoriaProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCategoriaProductoRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCategoriaProductoRegistro.Designer.cs">
+      <DependentUpon>FormCategoriaProductoRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDepartamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDepartamentos.Designer.cs">
+      <DependentUpon>FormDepartamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDepartamentosR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDepartamentosR.Designer.cs">
+      <DependentUpon>FormDepartamentosR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDocTemplates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDocTemplates.Designer.cs">
+      <DependentUpon>FormDocTemplates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDocTemplatesR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDocTemplatesR.Designer.cs">
+      <DependentUpon>FormDocTemplatesR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmpleados.Designer.cs">
+      <DependentUpon>FormEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmpleadosR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmpleadosR.Designer.cs">
+      <DependentUpon>FormEmpleadosR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmpresaR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmpresaR.Designer.cs">
+      <DependentUpon>FormEmpresaR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmpresas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmpresas.Designer.cs">
+      <DependentUpon>FormEmpresas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntidadesIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEntidadesIndex.Designer.cs">
+      <DependentUpon>FormEntidadesIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEntidadesRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEntidadesRegistro.Designer.cs">
+      <DependentUpon>FormEntidadesRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMarcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMarcas.Designer.cs">
+      <DependentUpon>FormMarcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMarcasR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMarcasR.Designer.cs">
+      <DependentUpon>FormMarcasR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMonedaR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMonedaR.Designer.cs">
+      <DependentUpon>FormMonedaR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMonedas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMonedas.Designer.cs">
+      <DependentUpon>FormMonedas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMunicipios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMunicipios.Designer.cs">
+      <DependentUpon>FormMunicipios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMunicipiosR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMunicipiosR.Designer.cs">
+      <DependentUpon>FormMunicipiosR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOficinaNCFR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOficinaNCFR.Designer.cs">
+      <DependentUpon>FormOficinaNCFR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOficinaR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOficinaR.Designer.cs">
+      <DependentUpon>FormOficinaR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOficinas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOficinas.Designer.cs">
+      <DependentUpon>FormOficinas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOficinasNCF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOficinasNCF.Designer.cs">
+      <DependentUpon>FormOficinasNCF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPaises.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPaises.Designer.cs">
+      <DependentUpon>FormPaises.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPaisesR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPaisesR.Designer.cs">
+      <DependentUpon>FormPaisesR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProductos.Designer.cs">
+      <DependentUpon>FormProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProductosR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProductosR.Designer.cs">
+      <DependentUpon>FormProductosR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProvincias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProvincias.Designer.cs">
+      <DependentUpon>FormProvincias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProvinciasR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProvinciasR.Designer.cs">
+      <DependentUpon>FormProvinciasR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRepresentantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRepresentantes.Designer.cs">
+      <DependentUpon>FormRepresentantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRepresentantesR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRepresentantesR.Designer.cs">
+      <DependentUpon>FormRepresentantesR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRetrinciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRetrinciones.Designer.cs">
+      <DependentUpon>FormRetrinciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRetrincionesR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRetrincionesR.Designer.cs">
+      <DependentUpon>FormRetrincionesR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSectores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSectores.Designer.cs">
+      <DependentUpon>FormSectores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSectoresR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSectoresR.Designer.cs">
+      <DependentUpon>FormSectoresR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTipoEmpresas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTipoEmpresas.Designer.cs">
+      <DependentUpon>FormTipoEmpresas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTipoEmpresasR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTipoEmpresasR.Designer.cs">
+      <DependentUpon>FormTipoEmpresasR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTipoProductosDGII.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTipoProductosDGII.Designer.cs">
+      <DependentUpon>FormTipoProductosDGII.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTipoProductosDGIIR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTipoProductosDGIIR.Designer.cs">
+      <DependentUpon>FormTipoProductosDGIIR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUnidadesMedidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUnidadesMedidas.Designer.cs">
+      <DependentUpon>FormUnidadesMedidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUnidadesMedidasR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUnidadesMedidasR.Designer.cs">
+      <DependentUpon>FormUnidadesMedidasR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormZonas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormZonas.Designer.cs">
+      <DependentUpon>FormZonas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormZonasR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormZonasR.Designer.cs">
+      <DependentUpon>FormZonasR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataDB_ELR_NET\DataDB_ELR_NET.csproj">
+      <Project>{500b429c-3ac5-4fac-ab2a-4a3f5d9b85dc}</Project>
+      <Name>DataDB_ELR_NET</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WinControl_ELR_NET\WinControl_ELR_NET.csproj">
+      <Project>{bd4c4f54-a39b-4538-8eae-1279c3db8147}</Project>
+      <Name>WinControl_ELR_NET</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormCajas.resx">
+      <DependentUpon>FormCajas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCajasR.resx">
+      <DependentUpon>FormCajasR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCategoriaProducto.resx">
+      <DependentUpon>FormCategoriaProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCategoriaProductoRegistro.resx">
+      <DependentUpon>FormCategoriaProductoRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDepartamentos.resx">
+      <DependentUpon>FormDepartamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDepartamentosR.resx">
+      <DependentUpon>FormDepartamentosR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDocTemplates.resx">
+      <DependentUpon>FormDocTemplates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDocTemplatesR.resx">
+      <DependentUpon>FormDocTemplatesR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmpleados.resx">
+      <DependentUpon>FormEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmpleadosR.resx">
+      <DependentUpon>FormEmpleadosR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmpresaR.resx">
+      <DependentUpon>FormEmpresaR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmpresas.resx">
+      <DependentUpon>FormEmpresas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntidadesIndex.resx">
+      <DependentUpon>FormEntidadesIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEntidadesRegistro.resx">
+      <DependentUpon>FormEntidadesRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMarcas.resx">
+      <DependentUpon>FormMarcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMarcasR.resx">
+      <DependentUpon>FormMarcasR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMonedaR.resx">
+      <DependentUpon>FormMonedaR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMonedas.resx">
+      <DependentUpon>FormMonedas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMunicipios.resx">
+      <DependentUpon>FormMunicipios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMunicipiosR.resx">
+      <DependentUpon>FormMunicipiosR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOficinaNCFR.resx">
+      <DependentUpon>FormOficinaNCFR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOficinaR.resx">
+      <DependentUpon>FormOficinaR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOficinas.resx">
+      <DependentUpon>FormOficinas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOficinasNCF.resx">
+      <DependentUpon>FormOficinasNCF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPaises.resx">
+      <DependentUpon>FormPaises.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPaisesR.resx">
+      <DependentUpon>FormPaisesR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProductos.resx">
+      <DependentUpon>FormProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProductosR.resx">
+      <DependentUpon>FormProductosR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProvincias.resx">
+      <DependentUpon>FormProvincias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProvinciasR.resx">
+      <DependentUpon>FormProvinciasR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRepresentantes.resx">
+      <DependentUpon>FormRepresentantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRepresentantesR.resx">
+      <DependentUpon>FormRepresentantesR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRetrinciones.resx">
+      <DependentUpon>FormRetrinciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRetrincionesR.resx">
+      <DependentUpon>FormRetrincionesR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSectores.resx">
+      <DependentUpon>FormSectores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSectoresR.resx">
+      <DependentUpon>FormSectoresR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTipoEmpresas.resx">
+      <DependentUpon>FormTipoEmpresas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTipoEmpresasR.resx">
+      <DependentUpon>FormTipoEmpresasR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTipoProductosDGII.resx">
+      <DependentUpon>FormTipoProductosDGII.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTipoProductosDGIIR.resx">
+      <DependentUpon>FormTipoProductosDGIIR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUnidadesMedidas.resx">
+      <DependentUpon>FormUnidadesMedidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUnidadesMedidasR.resx">
+      <DependentUpon>FormUnidadesMedidasR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormZonas.resx">
+      <DependentUpon>FormZonas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormZonasR.resx">
+      <DependentUpon>FormZonasR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Resources\photo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1378160672_search - Copy %282%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

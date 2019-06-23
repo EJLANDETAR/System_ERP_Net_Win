@@ -1,0 +1,5 @@
+C:\Proyectos\SYSTEM_ERP_NET\ELREncript\bin\Debug\ELREncript.dll
+C:\Proyectos\SYSTEM_ERP_NET\ELREncript\bin\Debug\ELREncript.pdb
+C:\Proyectos\SYSTEM_ERP_NET\ELREncript\obj\Debug\ELREncript.dll
+C:\Proyectos\SYSTEM_ERP_NET\ELREncript\obj\Debug\ELREncript.pdb
+C:\Proyectos\SYSTEM_ERP_NET\ELREncript\obj\Debug\ELREncript.csproj.CoreCompileInputs.cache

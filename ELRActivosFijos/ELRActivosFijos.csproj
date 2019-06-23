@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0106D2BB-3411-4D62-9AD4-F04483CDD98D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ELRActivosFijos</RootNamespace>
+    <AssemblyName>ELRActivosFijos</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.Runtime.12.0.2.2402\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.Runtime.12.0.2.2402\lib\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.Runtime.12.0.2.2402\lib\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormActivosFijos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormActivosFijos.Designer.cs">
+      <DependentUpon>FormActivosFijos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormActivosFijosCBOficinas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormActivosFijosCBOficinas.Designer.cs">
+      <DependentUpon>FormActivosFijosCBOficinas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormActivosFijosCBOficinasR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormActivosFijosCBOficinasR.Designer.cs">
+      <DependentUpon>FormActivosFijosCBOficinasR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormActivosFijosCBResp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormActivosFijosCBResp.Designer.cs">
+      <DependentUpon>FormActivosFijosCBResp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormActivosFijosCBRespR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormActivosFijosCBRespR.Designer.cs">
+      <DependentUpon>FormActivosFijosCBRespR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormActivosFijosCBUbicacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormActivosFijosCBUbicacion.Designer.cs">
+      <DependentUpon>FormActivosFijosCBUbicacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormActivosFijosCBUbicacionR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormActivosFijosCBUbicacionR.Designer.cs">
+      <DependentUpon>FormActivosFijosCBUbicacionR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormActivosFijosConsMovimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormActivosFijosConsMovimientos.Designer.cs">
+      <DependentUpon>FormActivosFijosConsMovimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormActivosFijosDepreciaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormActivosFijosDepreciaciones.Designer.cs">
+      <DependentUpon>FormActivosFijosDepreciaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormActivosFijosDepreciacionR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormActivosFijosDepreciacionR.Designer.cs">
+      <DependentUpon>FormActivosFijosDepreciacionR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormActivosFijosR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormActivosFijosR.Designer.cs">
+      <DependentUpon>FormActivosFijosR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormActivosFijosTipos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormActivosFijosTipos.Designer.cs">
+      <DependentUpon>FormActivosFijosTipos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormActivosFijosTiposR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormActivosFijosTiposR.Designer.cs">
+      <DependentUpon>FormActivosFijosTiposR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormActivosFijosUbicaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormActivosFijosUbicaciones.Designer.cs">
+      <DependentUpon>FormActivosFijosUbicaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormActivosFijosUbicacionesR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormActivosFijosUbicacionesR.Designer.cs">
+      <DependentUpon>FormActivosFijosUbicacionesR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormActivosFijosVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormActivosFijosVentas.Designer.cs">
+      <DependentUpon>FormActivosFijosVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormActivosFijosVentasR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormActivosFijosVentasR.Designer.cs">
+      <DependentUpon>FormActivosFijosVentasR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataDB_ELR_NET\DataDB_ELR_NET.csproj">
+      <Project>{500b429c-3ac5-4fac-ab2a-4a3f5d9b85dc}</Project>
+      <Name>DataDB_ELR_NET</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WinControl_ELR_NET\WinControl_ELR_NET.csproj">
+      <Project>{bd4c4f54-a39b-4538-8eae-1279c3db8147}</Project>
+      <Name>WinControl_ELR_NET</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormActivosFijos.resx">
+      <DependentUpon>FormActivosFijos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormActivosFijosCBOficinas.resx">
+      <DependentUpon>FormActivosFijosCBOficinas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormActivosFijosCBOficinasR.resx">
+      <DependentUpon>FormActivosFijosCBOficinasR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormActivosFijosCBResp.resx">
+      <DependentUpon>FormActivosFijosCBResp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormActivosFijosCBRespR.resx">
+      <DependentUpon>FormActivosFijosCBRespR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormActivosFijosCBUbicacion.resx">
+      <DependentUpon>FormActivosFijosCBUbicacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormActivosFijosCBUbicacionR.resx">
+      <DependentUpon>FormActivosFijosCBUbicacionR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormActivosFijosConsMovimientos.resx">
+      <DependentUpon>FormActivosFijosConsMovimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormActivosFijosDepreciaciones.resx">
+      <DependentUpon>FormActivosFijosDepreciaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormActivosFijosDepreciacionR.resx">
+      <DependentUpon>FormActivosFijosDepreciacionR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormActivosFijosR.resx">
+      <DependentUpon>FormActivosFijosR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormActivosFijosTipos.resx">
+      <DependentUpon>FormActivosFijosTipos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormActivosFijosTiposR.resx">
+      <DependentUpon>FormActivosFijosTiposR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormActivosFijosUbicaciones.resx">
+      <DependentUpon>FormActivosFijosUbicaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormActivosFijosUbicacionesR.resx">
+      <DependentUpon>FormActivosFijosUbicacionesR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormActivosFijosVentas.resx">
+      <DependentUpon>FormActivosFijosVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormActivosFijosVentasR.resx">
+      <DependentUpon>FormActivosFijosVentasR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Resources\1378160672_search.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

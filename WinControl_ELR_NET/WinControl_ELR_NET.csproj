@@ -1,0 +1,677 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD4C4F54-A39B-4538-8EAE-1279C3DB8147}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WinControl_ELR_NET</RootNamespace>
+    <AssemblyName>WinControl_ELR_NET</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FastReport">
+      <HintPath>..\..\..\inst\FastReport.NET for NetFx4 2015.2.16\FastReport.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Bars">
+      <HintPath>..\..\..\inst\FastReport.NET for NetFx4 2015.2.16\FastReport.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Editor">
+      <HintPath>..\..\..\inst\FastReport.NET for NetFx4 2015.2.16\FastReport.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Controls.Ribbon" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControlesMostrar.cs" />
+    <Compile Include="Correos.cs" />
+    <Compile Include="ELRBotonBuscar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ELRCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ELRCombobox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ELRDatePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ELRDatosEntidad.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ELRDatosEntidad.Designer.cs">
+      <DependentUpon>ELRDatosEntidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ELRFormAnular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ELRFormAnular.Designer.cs">
+      <DependentUpon>ELRFormAnular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ELRFormBusquedaGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ELRFormBusquedaGeneral.Designer.cs">
+      <DependentUpon>ELRFormBusquedaGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ELRFormDesgloseEfectivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ELRFormDesgloseEfectivo.Designer.cs">
+      <DependentUpon>ELRFormDesgloseEfectivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ELRFormDesglosePago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ELRFormDesglosePago.Designer.cs">
+      <DependentUpon>ELRFormDesglosePago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ELRFormEditCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ELRFormEditCliente.Designer.cs">
+      <DependentUpon>ELRFormEditCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ELRFormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ELRFormLogin.Designer.cs">
+      <DependentUpon>ELRFormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ELRFormMensajeErrores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ELRFormMensajeErrores.Designer.cs">
+      <DependentUpon>ELRFormMensajeErrores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ELRFormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ELRFormPrincipal.Designer.cs">
+      <DependentUpon>ELRFormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ELRFormRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ELRFormRegistro.Designer.cs">
+      <DependentUpon>ELRFormRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ELRFormPreviewRDLC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ELRFormPreviewRDLC.Designer.cs">
+      <DependentUpon>ELRFormPreviewRDLC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ELRFormSelEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ELRFormSelEmpresa.Designer.cs">
+      <DependentUpon>ELRFormSelEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ELRLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ELRNumericUpdDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ELRTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ELRUtils.cs" />
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCambiarContrasena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCambiarContrasena.Designer.cs">
+      <DependentUpon>FormCambiarContrasena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfigSys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfigSys.Designer.cs">
+      <DependentUpon>FormConfigSys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultasGlobal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultasGlobal.Designer.cs">
+      <DependentUpon>FormConsultasGlobal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDesglosePagoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDesglosePagoCliente.Designer.cs">
+      <DependentUpon>FormDesglosePagoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormExportToExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormExportToExcel.Designer.cs">
+      <DependentUpon>FormExportToExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGenerarContabilidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGenerarContabilidad.Designer.cs">
+      <DependentUpon>FormGenerarContabilidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGenerarProcesosSys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGenerarProcesosSys.Designer.cs">
+      <DependentUpon>FormGenerarProcesosSys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModulos.Designer.cs">
+      <DependentUpon>FormModulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModulosR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModulosR.Designer.cs">
+      <DependentUpon>FormModulosR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOpcionesImpCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOpcionesImpCaja.Designer.cs">
+      <DependentUpon>FormOpcionesImpCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOpcionesMenus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOpcionesMenus.Designer.cs">
+      <DependentUpon>FormOpcionesMenus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOpcionesMenusR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOpcionesMenusR.Designer.cs">
+      <DependentUpon>FormOpcionesMenusR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPlantillaIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPlantillaIndex.Designer.cs">
+      <DependentUpon>FormPlantillaIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormParamReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormParamReportes.Designer.cs">
+      <DependentUpon>FormParamReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQueryDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQueryDB.Designer.cs">
+      <DependentUpon>FormQueryDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistrarLicencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistrarLicencia.Designer.cs">
+      <DependentUpon>FormRegistrarLicencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportes.Designer.cs">
+      <DependentUpon>FormReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReportesR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportesR.Designer.cs">
+      <DependentUpon>FormReportesR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelectImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelectImage.Designer.cs">
+      <DependentUpon>FormSelectImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelectOficina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelectOficina.Designer.cs">
+      <DependentUpon>FormSelectOficina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSplash.Designer.cs">
+      <DependentUpon>FormSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSuCambio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSuCambio.Designer.cs">
+      <DependentUpon>FormSuCambio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVariablesSistema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVariablesSistema.Designer.cs">
+      <DependentUpon>FormVariablesSistema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notificacion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Notificacion.Designer.cs">
+      <DependentUpon>Notificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintRDLC.cs" />
+    <Compile Include="MyColumna.cs" />
+    <Compile Include="Numalet.cs" />
+    <Compile Include="ReportesDS.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MyReportParameter.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Totaliza.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ELRBotonBuscar.resx">
+      <DependentUpon>ELRBotonBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ELRCombobox.resx">
+      <DependentUpon>ELRCombobox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ELRDatosEntidad.resx">
+      <DependentUpon>ELRDatosEntidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ELRFormAnular.resx">
+      <DependentUpon>ELRFormAnular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ELRFormBusquedaGeneral.resx">
+      <DependentUpon>ELRFormBusquedaGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ELRFormDesgloseEfectivo.resx">
+      <DependentUpon>ELRFormDesgloseEfectivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ELRFormDesglosePago.resx">
+      <DependentUpon>ELRFormDesglosePago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ELRFormEditCliente.resx">
+      <DependentUpon>ELRFormEditCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ELRFormLogin.resx">
+      <DependentUpon>ELRFormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ELRFormMensajeErrores.resx">
+      <DependentUpon>ELRFormMensajeErrores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ELRFormPrincipal.resx">
+      <DependentUpon>ELRFormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ELRFormRegistro.resx">
+      <DependentUpon>ELRFormRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ELRFormPreviewRDLC.resx">
+      <DependentUpon>ELRFormPreviewRDLC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ELRFormSelEmpresa.resx">
+      <DependentUpon>ELRFormSelEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ELRTextBox.resx">
+      <DependentUpon>ELRTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCambiarContrasena.resx">
+      <DependentUpon>FormCambiarContrasena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfigSys.resx">
+      <DependentUpon>FormConfigSys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultasGlobal.resx">
+      <DependentUpon>FormConsultasGlobal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDesglosePagoCliente.resx">
+      <DependentUpon>FormDesglosePagoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormExportToExcel.resx">
+      <DependentUpon>FormExportToExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGenerarContabilidad.resx">
+      <DependentUpon>FormGenerarContabilidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGenerarProcesosSys.resx">
+      <DependentUpon>FormGenerarProcesosSys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModulos.resx">
+      <DependentUpon>FormModulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModulosR.resx">
+      <DependentUpon>FormModulosR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOpcionesImpCaja.resx">
+      <DependentUpon>FormOpcionesImpCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOpcionesMenus.resx">
+      <DependentUpon>FormOpcionesMenus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOpcionesMenusR.resx">
+      <DependentUpon>FormOpcionesMenusR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPlantillaIndex.resx">
+      <DependentUpon>FormPlantillaIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormParamReportes.resx">
+      <DependentUpon>FormParamReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQueryDB.resx">
+      <DependentUpon>FormQueryDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistrarLicencia.resx">
+      <DependentUpon>FormRegistrarLicencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportes.resx">
+      <DependentUpon>FormReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportesR.resx">
+      <DependentUpon>FormReportesR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectImage.resx">
+      <DependentUpon>FormSelectImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectOficina.resx">
+      <DependentUpon>FormSelectOficina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSplash.resx">
+      <DependentUpon>FormSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSuCambio.resx">
+      <DependentUpon>FormSuCambio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVariablesSistema.resx">
+      <DependentUpon>FormVariablesSistema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notificacion.resx">
+      <DependentUpon>Notificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Resources\edit_property-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1376016567_cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1378775643_cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1379618331_exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1378155454_Black_Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu - 05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1378160672_search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ErrorFatal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1376334284_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1379618331_exit - 16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preview - 16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\config.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataDB_ELR_NET\DataDB_ELR_NET.csproj">
+      <Project>{500b429c-3ac5-4fac-ab2a-4a3f5d9b85dc}</Project>
+      <Name>DataDB_ELR_NET</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ELREncript\ELREncript.csproj">
+      <Project>{8d80e372-8ae8-49ea-8b04-d66874231173}</Project>
+      <Name>ELREncript</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OfficeDriver\OfficeDriver.vbproj">
+      <Project>{56751cd0-37c7-45d0-88b7-b606abb3f7ba}</Project>
+      <Name>OfficeDriver</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brainstormSplash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1461167446_circle-arrow_back-previous-outline-stroke.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1461167595_back-alt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brainstormSplash1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1376337073_propeller-logo-square2-webtreatsetc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu - 051.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app.ico" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Schedule_52px.png" />
+    <None Include="Resources\ViewEdit_26px.png" />
+    <None Include="Resources\Process_26px.png" />
+    <None Include="Resources\Worker_26px.png" />
+    <None Include="Resources\Salary_26px.png" />
+    <None Include="Resources\User Groups_26px.png" />
+    <None Include="Resources\User Account_26px.png" />
+    <None Include="Resources\View Details_26px.png" />
+    <None Include="Resources\Undo_26px.png" />
+    <None Include="Resources\Trash_26px.png" />
+    <None Include="Resources\Report Card_26px.png" />
+    <None Include="Resources\Product_26px.png" />
+    <None Include="Resources\Sell_52px.png" />
+    <None Include="Resources\Transaction List_52px.png" />
+    <None Include="Resources\Undo_52px.png" />
+    <None Include="Resources\Deposit_52px.png" />
+    <None Include="Resources\Bonds_52px1.png" />
+    <None Include="Resources\Cancel_52px.png" />
+    <None Include="Resources\Automation_52px.png" />
+    <None Include="Resources\Beach_52px.png" />
+    <None Include="Resources\Check All_52px.png" />
+    <None Include="Resources\Logout Rounded Up_52px.png" />
+    <None Include="Resources\Excel_52px.png" />
+    <None Include="Resources\Bill_52px.png" />
+    <None Include="Resources\Book_52px.png" />
+    <None Include="Resources\Home Automation_52px.png" />
+    <None Include="Resources\List_52px.png" />
+    <None Include="Resources\Play_26px.png" />
+    <None Include="Resources\Play_26px1.png" />
+    <None Include="Resources\Customer_26px.png" />
+    <None Include="Resources\List_26px.png" />
+    <None Include="Resources\Delete Document_26px.png" />
+    <None Include="Resources\Print_26px.png" />
+    <None Include="Resources\Bank_26px.png" />
+    <None Include="Resources\Buying_26px.png" />
+    <None Include="Resources\Print_26px1.png" />
+    <None Include="Resources\Microsoft Excel_26px.png" />
+    <None Include="Resources\List_26px1.png" />
+    <None Include="Resources\Checked Checkbox_26px.png" />
+    <None Include="Resources\Money Box_26px.png" />
+    <None Include="Resources\Money_26px.png" />
+    <None Include="Resources\General Ledger_26px.png" />
+    <None Include="Resources\Museum_26px.png" />
+    <None Include="Resources\Moleskine_26px.png" />
+    <None Include="Resources\Beach_26px.png" />
+    <None Include="Resources\Automation_26px.png" />
+    <None Include="Resources\Pie Chart_26px.png" />
+    <None Include="Resources\Note_26px.png" />
+    <None Include="Resources\Plus_26px.png" />
+    <None Include="Resources\Notification_26px.png" />
+    <None Include="Resources\Notification_52px.png" />
+    <None Include="Resources\loading %281%29.gif" />
+    <Content Include="Resources\Print_52px.png" />
+    <None Include="Resources\Print_52px1.png" />
+    <None Include="Resources\Worker_52px.png" />
+    <None Include="Resources\POS Terminal_52px.png" />
+    <None Include="Resources\Accounting_52px.png" />
+    <None Include="Resources\Bank_52px.png" />
+    <None Include="Resources\Bonds_52px.png" />
+    <None Include="Resources\Libro_banco_52px.png" />
+    <None Include="Resources\Check_52px.png" />
+    <None Include="Resources\Printer Maintenance_52px.png" />
+    <None Include="Resources\Paper Money_52px.png" />
+    <None Include="Resources\User Groups_52px.png" />
+    <None Include="Resources\User Account_52px.png" />
+    <None Include="Resources\Process_52px.png" />
+    <None Include="Resources\Refund_52px.png" />
+    <None Include="Resources\Customer_52px.png" />
+    <None Include="Resources\Buying_52px.png" />
+    <None Include="Resources\Cash Register_52px.png" />
+    <None Include="Resources\Report Card_52px.png" />
+    <None Include="Resources\Product_52px.png" />
+    <None Include="Resources\report.png" />
+    <None Include="Resources\loading.gif" />
+    <None Include="Resources\Menu - 052.png" />
+    <None Include="Resources\Login Manager.png" />
+    <None Include="Resources\Copy32x32.png" />
+    <None Include="Resources\Copy_24x24.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

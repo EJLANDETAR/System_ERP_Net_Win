@@ -1,0 +1,30 @@
+D:\PROYECTO\ConfigConexion\ConfigConexion\bin\Debug\ConfigConexion.exe
+D:\PROYECTO\ConfigConexion\ConfigConexion\bin\Debug\ConfigConexion.pdb
+D:\PROYECTO\ConfigConexion\ConfigConexion\obj\Debug\ResolveAssemblyReference.cache
+D:\PROYECTO\ConfigConexion\ConfigConexion\obj\Debug\ConfigConexion.Properties.Resources.resources
+D:\PROYECTO\ConfigConexion\ConfigConexion\obj\Debug\ConfigConexion.csproj.GenerateResource.Cache
+D:\PROYECTO\ConfigConexion\ConfigConexion\obj\Debug\ConfigConexion.exe
+D:\PROYECTO\ConfigConexion\ConfigConexion\obj\Debug\ConfigConexion.pdb
+D:\PROYECTO\ConfigConexion\ConfigConexion\obj\Debug\ConfigConexion.frmConfiConexion.resources
+D:\PROYECTO\PROYECTO VS\ProyectoGPV\ConfigurarConexion\bin\Debug\ConfigConexion.exe
+D:\PROYECTO\PROYECTO VS\ProyectoGPV\ConfigurarConexion\bin\Debug\ConfigConexion.pdb
+D:\PROYECTO\PROYECTO VS\ProyectoGPV\ConfigurarConexion\obj\Debug\ConfigConexion.csprojResolveAssemblyReference.cache
+D:\PROYECTO\PROYECTO VS\ProyectoGPV\ConfigurarConexion\obj\Debug\ConfigConexion.frmConfiConexion.resources
+D:\PROYECTO\PROYECTO VS\ProyectoGPV\ConfigurarConexion\obj\Debug\ConfigConexion.Properties.Resources.resources
+D:\PROYECTO\PROYECTO VS\ProyectoGPV\ConfigurarConexion\obj\Debug\ConfigConexion.csproj.GenerateResource.Cache
+D:\PROYECTO\PROYECTO VS\ProyectoGPV\ConfigurarConexion\obj\Debug\ConfigConexion.exe
+D:\PROYECTO\PROYECTO VS\ProyectoGPV\ConfigurarConexion\obj\Debug\ConfigConexion.pdb
+D:\PROYECTO\PROYECTO VS\ProyectoGPV\ConfigurarConexion\bin\Debug\ConfigConexion.exe.config
+D:\PROYECTO\PROYECTO VS\ProyectoGPV\ConfigurarConexion\bin\Debug\AccesoDatosGPV.dll
+D:\PROYECTO\PROYECTO VS\ProyectoGPV\ConfigurarConexion\bin\Debug\AccesoDatosGPV.pdb
+C:\Proyectos\PROYECTO VS\PROYECTO VS\ProyectoGPV\ConfigurarConexion\obj\Debug\ConfigConexion.csprojResolveAssemblyReference.cache
+C:\Proyectos\PROYECTO VS\PROYECTO VS\ProyectoGPV\ConfigurarConexion\obj\Debug\ConfigConexion.frmConfiConexion.resources
+C:\Proyectos\PROYECTO VS\PROYECTO VS\ProyectoGPV\ConfigurarConexion\obj\Debug\ConfigConexion.Properties.Resources.resources
+C:\Proyectos\PROYECTO VS\PROYECTO VS\ProyectoGPV\ConfigurarConexion\obj\Debug\ConfigConexion.csproj.GenerateResource.Cache
+C:\Proyectos\PROYECTO VS\PROYECTO VS\ProyectoGPV\ConfigurarConexion\obj\Debug\ConfigConexion.exe
+C:\Proyectos\PROYECTO VS\PROYECTO VS\ProyectoGPV\ConfigurarConexion\obj\Debug\ConfigConexion.pdb
+C:\Proyectos\PROYECTO VS\PROYECTO VS\ProyectoGPV\ConfigurarConexion\bin\Debug\ConfigConexion.exe.config
+C:\Proyectos\PROYECTO VS\PROYECTO VS\ProyectoGPV\ConfigurarConexion\bin\Debug\ConfigConexion.exe
+C:\Proyectos\PROYECTO VS\PROYECTO VS\ProyectoGPV\ConfigurarConexion\bin\Debug\ConfigConexion.pdb
+C:\Proyectos\PROYECTO VS\PROYECTO VS\ProyectoGPV\ConfigurarConexion\bin\Debug\ELR_ConfigConn.dll
+C:\Proyectos\PROYECTO VS\PROYECTO VS\ProyectoGPV\ConfigurarConexion\bin\Debug\ELR_ConfigConn.pdb

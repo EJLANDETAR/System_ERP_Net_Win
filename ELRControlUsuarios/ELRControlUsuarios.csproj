@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B5098C1-CC5C-46F1-AB37-4DC028190F2E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ELRControlUsuarios</RootNamespace>
+    <AssemblyName>ELRControlUsuarios</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.Runtime.12.0.2.2402\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.Runtime.12.0.2.2402\lib\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.Runtime.12.0.2.2402\lib\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormOpcionesXRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOpcionesXRol.Designer.cs">
+      <DependentUpon>FormOpcionesXRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRoles.Designer.cs">
+      <DependentUpon>FormRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRolesR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRolesR.Designer.cs">
+      <DependentUpon>FormRolesR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRolesUsuarioR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRolesUsuarioR.Designer.cs">
+      <DependentUpon>FormRolesUsuarioR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUsuarioOficinas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsuarioOficinas.Designer.cs">
+      <DependentUpon>FormUsuarioOficinas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUsuarioResetearPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsuarioResetearPassword.Designer.cs">
+      <DependentUpon>FormUsuarioResetearPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsuarios.Designer.cs">
+      <DependentUpon>FormUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUsuariosR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsuariosR.Designer.cs">
+      <DependentUpon>FormUsuariosR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataDB_ELR_NET\DataDB_ELR_NET.csproj">
+      <Project>{500b429c-3ac5-4fac-ab2a-4a3f5d9b85dc}</Project>
+      <Name>DataDB_ELR_NET</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ELRLogicaNegocio\ELRLogicaNegocio.csproj">
+      <Project>{ed987e40-f22c-44b2-8e34-2408e077dca9}</Project>
+      <Name>ELRLogicaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WinControl_ELR_NET\WinControl_ELR_NET.csproj">
+      <Project>{bd4c4f54-a39b-4538-8eae-1279c3db8147}</Project>
+      <Name>WinControl_ELR_NET</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormOpcionesXRol.resx">
+      <DependentUpon>FormOpcionesXRol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRoles.resx">
+      <DependentUpon>FormRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRolesR.resx">
+      <DependentUpon>FormRolesR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRolesUsuarioR.resx">
+      <DependentUpon>FormRolesUsuarioR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsuarioOficinas.resx">
+      <DependentUpon>FormUsuarioOficinas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsuarioResetearPassword.resx">
+      <DependentUpon>FormUsuarioResetearPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsuarios.resx">
+      <DependentUpon>FormUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsuariosR.resx">
+      <DependentUpon>FormUsuariosR.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

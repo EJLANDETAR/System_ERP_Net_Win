@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A88623B4-EFB9-472D-87DE-976A3FA0F6A6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ELRBanco</RootNamespace>
+    <AssemblyName>ELRBanco</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.Runtime.12.0.2.2402\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.Runtime.12.0.2.2402\lib\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.Runtime.12.0.2.2402\lib\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormBancoAddChkPredefinido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBancoAddChkPredefinido.Designer.cs">
+      <DependentUpon>FormBancoAddChkPredefinido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBancoAnularTrans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBancoAnularTrans.Designer.cs">
+      <DependentUpon>FormBancoAnularTrans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBancoAnularTransR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBancoAnularTransR.Designer.cs">
+      <DependentUpon>FormBancoAnularTransR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBancoCHKPredefinidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBancoCHKPredefinidos.Designer.cs">
+      <DependentUpon>FormBancoCHKPredefinidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBancoCHKPredefinidosR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBancoCHKPredefinidosR.Designer.cs">
+      <DependentUpon>FormBancoCHKPredefinidosR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBancoConciliaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBancoConciliaciones.Designer.cs">
+      <DependentUpon>FormBancoConciliaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBancoConciliacionR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBancoConciliacionR.Designer.cs">
+      <DependentUpon>FormBancoConciliacionR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBancoGenerarCHKPredefinidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBancoGenerarCHKPredefinidos.Designer.cs">
+      <DependentUpon>FormBancoGenerarCHKPredefinidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBancosConsTrans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBancosConsTrans.Designer.cs">
+      <DependentUpon>FormBancosConsTrans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBancos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBancos.Designer.cs">
+      <DependentUpon>FormBancos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBancosCheques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBancosCheques.Designer.cs">
+      <DependentUpon>FormBancosCheques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBancosChequesR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBancosChequesR.Designer.cs">
+      <DependentUpon>FormBancosChequesR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBancosCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBancosCuentas.Designer.cs">
+      <DependentUpon>FormBancosCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBancosCuentasR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBancosCuentasR.Designer.cs">
+      <DependentUpon>FormBancosCuentasR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBancosDepositos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBancosDepositos.Designer.cs">
+      <DependentUpon>FormBancosDepositos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBancosDepositosR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBancosDepositosR.Designer.cs">
+      <DependentUpon>FormBancosDepositosR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBancosFormatoChequesR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBancosFormatoChequesR.Designer.cs">
+      <DependentUpon>FormBancosFormatoChequesR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBancosR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBancosR.Designer.cs">
+      <DependentUpon>FormBancosR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBancoTiposTrans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBancoTiposTrans.Designer.cs">
+      <DependentUpon>FormBancoTiposTrans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBancoTiposTransR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBancoTiposTransR.Designer.cs">
+      <DependentUpon>FormBancoTiposTransR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsCHK_DEP_Transito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsCHK_DEP_Transito.Designer.cs">
+      <DependentUpon>FormConsCHK_DEP_Transito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormImprimirCheques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImprimirCheques.Designer.cs">
+      <DependentUpon>FormImprimirCheques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOtrasTrans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOtrasTrans.Designer.cs">
+      <DependentUpon>FormOtrasTrans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOtrasTransR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOtrasTransR.Designer.cs">
+      <DependentUpon>FormOtrasTransR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataDB_ELR_NET\DataDB_ELR_NET.csproj">
+      <Project>{500b429c-3ac5-4fac-ab2a-4a3f5d9b85dc}</Project>
+      <Name>DataDB_ELR_NET</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ELRLogicaNegocio\ELRLogicaNegocio.csproj">
+      <Project>{ed987e40-f22c-44b2-8e34-2408e077dca9}</Project>
+      <Name>ELRLogicaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WinControl_ELR_NET\WinControl_ELR_NET.csproj">
+      <Project>{bd4c4f54-a39b-4538-8eae-1279c3db8147}</Project>
+      <Name>WinControl_ELR_NET</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormBancoAddChkPredefinido.resx">
+      <DependentUpon>FormBancoAddChkPredefinido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBancoAnularTrans.resx">
+      <DependentUpon>FormBancoAnularTrans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBancoAnularTransR.resx">
+      <DependentUpon>FormBancoAnularTransR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBancoCHKPredefinidos.resx">
+      <DependentUpon>FormBancoCHKPredefinidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBancoCHKPredefinidosR.resx">
+      <DependentUpon>FormBancoCHKPredefinidosR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBancoConciliaciones.resx">
+      <DependentUpon>FormBancoConciliaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBancoConciliacionR.resx">
+      <DependentUpon>FormBancoConciliacionR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBancoGenerarCHKPredefinidos.resx">
+      <DependentUpon>FormBancoGenerarCHKPredefinidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBancos.resx">
+      <DependentUpon>FormBancos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBancosCheques.resx">
+      <DependentUpon>FormBancosCheques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBancosChequesR.resx">
+      <DependentUpon>FormBancosChequesR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBancosConsTrans.resx">
+      <DependentUpon>FormBancosConsTrans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBancosCuentas.resx">
+      <DependentUpon>FormBancosCuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBancosCuentasR.resx">
+      <DependentUpon>FormBancosCuentasR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBancosDepositos.resx">
+      <DependentUpon>FormBancosDepositos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBancosDepositosR.resx">
+      <DependentUpon>FormBancosDepositosR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBancosFormatoChequesR.resx">
+      <DependentUpon>FormBancosFormatoChequesR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBancosR.resx">
+      <DependentUpon>FormBancosR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBancoTiposTrans.resx">
+      <DependentUpon>FormBancoTiposTrans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBancoTiposTransR.resx">
+      <DependentUpon>FormBancoTiposTransR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsCHK_DEP_Transito.resx">
+      <DependentUpon>FormConsCHK_DEP_Transito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImprimirCheques.resx">
+      <DependentUpon>FormImprimirCheques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOtrasTrans.resx">
+      <DependentUpon>FormOtrasTrans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOtrasTransR.resx">
+      <DependentUpon>FormOtrasTransR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Resources\1378160672_search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_property-26.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
